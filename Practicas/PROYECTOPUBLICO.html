@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Metadatos Adicionales-->
+     <meta name="author" content="Alan Aguilera">
+     <meta
+          name="description" content="Una pagina de mi proyecto final de html del bootcamp sobre etiquetas semanticas y
+          estructuras basicas de una pagina web"
+          >
+          <meta name="keywords"
+          content="HTML, etiquetas semanticas, proyecto">
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Mi Blog Personal</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Sobre mi</a></li>
+          <li><a href="#">Articulos</a></li>
+          <li><a href="#Contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="Contacto">
+        <h2>Formulario de contacto</h2>
+        <p>Rellena el formulario para enviarme tus comentarios o preguntas</p>
+        <!-- Formulario de contacto-->
+        <form action="">
+          <!-- laber es una etiqueta que nos sirve para asociar un texto descriptivo a un elemento de entrada.
+                 El atributo for en label ayuda a vincular con un elemento de formulario especifico----
+                 -->
+          <label for="">Nombre</label>
+          <input
+            type="text"
+            id="nombre"
+            placeholder="Escribe tu nombre"
+            required
+          />
+
+          <label for="email">Correo Electronico: </label>
+          <input
+            type="email"
+            id="email"
+            placeholder="ejemplo@correo.com"
+            required
+          />
+
+          <label> <form action="asunto">Asunto:</form></label>
+          <select id="asunto" required>
+            <option>Consulta</option>
+            <option>Sugerencia</option>
+            <option>Queja</option>
+            <option>Otro</option>
+          </select>
+
+          <label for="mensaje">Mensaje</label>
+          <textarea
+            name="mensaje"
+            rows="5"
+            placeholder="Escribe tu mensaje aqui..."
+            required
+          >
+          </textarea>
+
+          <!-- fieldset nos sirve para agrupar elementos de un formulario relacionado. Facilita la comprension 
+             navegacion en el formulario, especialmente con usuarios de lectores de pantalla-->
+          <fieldset>
+            <!-- Lengend nos ayuda a prpoporcionar un titulo a mi grupo de informacion almacenado en fieldset-->
+            <legend>Género</legend>
+            <!-- Cada boton de radio tiene el mismo name para permitir selecionar solo una opcion 
+              en este grupo -->
+            <label for="genero-masculino">Masculino</label>
+            <input type="radio" name="" id="genero-masculino" />
+
+            <label for="genero-femenino">Femenino</label>
+            <input type="radio" name="" id="genero-femenino" />
+
+            <label for="genero-otro">Otro</label>
+            <input type="radio" name="" id="genero-otro" />
+          </fieldset>
+
+          <fieldset>
+            <legend>Intereses</legend>
+            <label for="intereses-Cocinar">Cocinar</label>
+            <input type="checkbox" name="cocinar" id="intereses-Cocinar" />
+
+            <label for="intereses-senderismo">Senderismo</label>
+            <input
+              type="checkbox"
+              name="Senderismo"
+              id="intereses-senderismo"
+            />
+
+            <label for="intereses-meditar">Meditar</label>
+            <input type="checkbox" name="Meditar" id="intereses-meditar" />
+
+            <label for="intereses-escribir">Escribir</label>
+            <input type="checkbox" name="Escribir" id="intereses-escribir" />
+          </fieldset>
+
+          <button type="submit"> Enviar</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
