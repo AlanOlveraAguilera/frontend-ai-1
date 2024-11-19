@@ -1,1 +1,1 @@
-#  Mis jeercicios realizados durante las clases
+# Mis ejercicios realizados durante las clases
